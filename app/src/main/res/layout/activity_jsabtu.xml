@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hari.j_sabtu">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_primary_dark"
+        android:scrollbarSize="2dp"
+        app:title="Sabtu"
+        app:titleTextColor="@color/white" />
+
+    <TextView
+        android:fontFamily="@font/mlight"
+        android:id="@+id/notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarr"
+        android:gravity="center"
+        android:text="Jadwal tercantum menggunakan WIB (Waktu Indonesia Barat) dan Jadwal akan diperbaharui tiap saat"
+        android:padding="10dp"
+        android:textSize="11sp"
+        android:textStyle="bold|italic" />
+
+    <ListView
+        android:id="@+id/lvminggu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/notes">
+
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".notifikasi"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarkonten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4254B8"
+        app:titleTextColor="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="TENTANG KAMI" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="PT. Hayat TV Entertaiment dengan nama sebutan udara “Hayat TV” merupakan perusahaan yang bergerak dibidang Jasa Penyiaran dan Pemrograman Televisi, In-House Production dan Penyedia Layanan Internet. Hayat TV merupakan Lembaga Penyiaran Berlangganan berlegalitas IPP Tetap. Hadir di Kota Sampit dan sekitarnya sejak tahun 2008 sebagai penyelenggara layanan penyiaran melalui kabel dengan tagline “Dengan Satu Kabel Dunia Hadir Di Rumah Anda”." />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Hayat TV merupakan penyelenggara penyiaran terpercaya di Kota Sampit yang selalu menjaga kualitas siaran untuk seluruh pelanggan.
+        " />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Dalam perkembangan teknologi broadcasting system Hayat TV siap menjadi primadona dalam dunia digital dan siap mengedukasi masyarakat tentang digitalisasi di dunia pertelevisian" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Melalui Hayat TV Channel kami menayangkan dan memproduksi informasi seputar Kotawaringin Timur dan sekitarnya termasuk Kota Palangkaraya, Kotawaringin Barat dan Kapuas serta menyajikan program acara dengan citra rasa lokal Kotawaringin Timur." />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Sebagai wujud kesiapan kami untuk menghadapi era digital pada tahun 2020 PT. Hayat TV Entertaiment merambah jasa layanan baru yaitu Faznet Sampit sebagai penyedia layanan internet broadband dan internet dedicated. Kami menciptakan sebuah trend baru “Be Different” melalui Faznet Sampit yaitu penggunaan internet dengan atmosfer dan experience berbeda pada pengguna. Hanya kami, Faznet Sampit yang menyediakan layanan internet stabil, terjangkau dan unlimited demi memenuhi kebutuhan masyarakat kota sampit akan koneksi internet, hiburan dan edukasi." />
+
+            <TextView
+                android:id="@+id/textlinkprivacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="13dp"
+                android:text="@string/linkprivacypolcy" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+public class MainActivity extends AppCompatActivity {
+    WebView web;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        web=findViewById(R.id.webview);
+        web.getSettings().setJavaScriptEnabled(true);
+        String url="";
+        web.loadUrl(url);
+        web.setWebViewClient(new WebViewClient(){
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                return false;
+            }
+        });
+    }
+}
+
+
+https://youtu.be/pnzTbVI9oSA
+
+
+ <WebView
+        android:id="@+id/webview"
+        android:layout_width="410dp"
+        android:layout_height="197dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0"

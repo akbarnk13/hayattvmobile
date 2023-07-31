@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".livechat">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4254B8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Live Chat TV"
+
+        app:titleTextColor="@color/white" />
+
+    <com.google.android.exoplayer2.ui.StyledPlayerView
+        android:id="@+id/livechatvideo"
+        android:layout_width="wrap_content"
+        android:layout_height="230dp"
+        android:layout_below="@id/toolbarr"
+        android:layout_marginTop="-1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:show_buffering="when_playing"
+        app:show_shuffle_button="false"
+        tools:ignore="ImageContrastCheck"></com.google.android.exoplayer2.ui.StyledPlayerView>
+
+    <ListView
+        android:id="@+id/listviewchat"
+        android:layout_width="match_parent"
+        android:layout_height="384dp"
+        android:layout_below="@+id/livechatvideo"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:weightSum="10">
+        <EditText
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Nama"
+            android:id="@+id/sender">
+
+        </EditText>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pesan"
+            android:hint="Komentar"
+            android:layout_weight="7"
+            >
+        </EditText>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/kirim"
+            android:text="Kirim">
+
+        </Button>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

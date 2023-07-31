@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "158019834110",
+    "project_id": "awal-f91d0",
+    "storage_bucket": "awal-f91d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158019834110:android:452228f02eb5326d9695af",
+        "android_client_info": {
+          "package_name": "com.htvm.awal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "158019834110-u2s9ghjp1spbkkp99u9m53ghsjf7sid3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1yjECpY24xlbM5AHhWQ17UZK-Cl-deD8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "158019834110-u2s9ghjp1spbkkp99u9m53ghsjf7sid3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
